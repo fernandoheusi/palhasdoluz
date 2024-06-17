@@ -1,0 +1,8 @@
+<app-separator title="Aproveite"></app-separator>
+<div id="productsList">
+	@for (product of products;track product.name) {
+	
+		<app-product productName={{product.name}} productValue={{product.value}} productPicture={{product.picture}} productAlt={{product.alt}} >
+		</app-product>
+	}
+</div>

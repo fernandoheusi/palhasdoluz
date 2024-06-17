@@ -1,0 +1,39 @@
+#header{
+	background: linear-gradient(180deg, #FFC048 31%, #99732B00 100%);
+	min-height: 466px;
+	background-color: #FFC048;
+	width: 100%;
+}
+
+#art{
+	top: 200px;
+	position: absolute;
+	width: 100%;
+}
+
+#flex-art{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 160px;
+}
+
+#logo{
+	height: 106px;
+}
+
+@media only screen and (max-width: 930px){
+	#flex-art{
+		flex-direction: column-reverse;
+		gap: 80px;
+	}
+
+	#header{
+		min-height: 700px;
+		margin-bottom: 130px;
+	}
+}
+
+img {
+	height: 315px;
+}

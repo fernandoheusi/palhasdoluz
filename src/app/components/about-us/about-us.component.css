@@ -1,0 +1,9 @@
+#about-us-container{
+	display: flex;
+	align-items: center;
+}
+
+img{
+	max-width: 50vw;
+	object-fit: scale-down;
+}

@@ -1,1 +1,55 @@
-/* You can add global styles to this file, and also import other style files */
+html, body{
+	background-color: #FFF9FB;
+	margin: 0;
+	min-height: 100vh;
+}
+
+h1, h2{
+	margin: 0;
+	color: #582919;
+	font-family: "Work Sans", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 20px;
+}
+
+h2 {
+		display: flex; 
+		flex-direction: row; 
+		color: #FFC048;
+}
+
+h2:before, 
+h2:after { 
+		content: ""; 
+		flex: 1 1; 
+		border-bottom: 2px solid #FFC048; 
+	} 
+	
+h2:before{
+	margin: auto 50px auto 0; 
+}
+
+h2:after{
+	margin: auto 0 auto 50px; 
+}
+
+h1 {
+	font-family: "Yeseva One", serif;
+	font-size: 60px;
+}
+
+.title-div{
+	justify-content: center;
+	padding: auto;
+}
+
+button{
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}

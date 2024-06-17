@@ -1,0 +1,25 @@
+section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+	flex: 1;
+}
+
+#product-picture{
+	width: 198px;
+	height: 198px;
+	object-fit: cover;
+}
+
+p{
+	text-align: right;
+}
+
+#value-interaction{
+	display: flex;
+	align-items: center;
+	width: 98px;
+	justify-content: space-between;
+}
