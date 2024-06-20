@@ -53,3 +53,5 @@ button{
 	cursor: pointer;
 	outline: inherit;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

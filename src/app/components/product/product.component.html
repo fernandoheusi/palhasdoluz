@@ -2,13 +2,17 @@
 	<img id="product-picture" src="{{productPicture}}">
 	<div>
 		<p>{{productName}}</p>
-		<p>{{productValue}}</p>
+		<p>R${{productValue}}</p>
 		<div id="value-interaction">
-			<button>
+			<button
+				(click)="decreaseQuantity()"
+			>
 				<img src="assets/circle-minus-svgrepo-com.svg"/>
 			</button>
-			0
-			<button>
+			{{productQuantity}}
+			<button
+				(click)="increaseQuantity()"
+			>
 				<img src="assets/circle-plus-svgrepo-com.svg"/>
 			</button>
 		</div>

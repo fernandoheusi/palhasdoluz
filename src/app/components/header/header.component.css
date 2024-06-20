@@ -22,6 +22,12 @@
 	height: 106px;
 }
 
+.cart{
+	height: 30px;
+	color: white;
+	fill: red;
+}
+
 @media only screen and (max-width: 930px){
 	#flex-art{
 		flex-direction: column-reverse;

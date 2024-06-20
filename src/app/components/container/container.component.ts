@@ -1,7 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ProductsListComponent } from '../products-list/products-list.component';
 import { AboutUsComponent } from '../about-us/about-us.component';
 import { SeparatorComponent } from '../separator/separator.component';
+import { ProductInterface } from '../../models/Product';
+
+export interface IncreaseCount {
+  (): void;
+}
 
 @Component({
   selector: 'app-container',
@@ -11,5 +16,7 @@ import { SeparatorComponent } from '../separator/separator.component';
   styleUrl: './container.component.css'
 })
 export class ContainerComponent {
+  // count = 0;
 
+  @Input() products: ProductInterface[] = []
 }
