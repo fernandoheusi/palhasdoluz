@@ -7,7 +7,7 @@
 
 #art{
 	top: 200px;
-	position: absolute;
+	/* position: absolute; */
 	width: 100%;
 }
 
@@ -22,22 +22,57 @@
 	height: 106px;
 }
 
+#top-header{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 20px 0;
+}
+
 .cart{
 	height: 30px;
 	color: white;
-	fill: red;
 }
 
+#count-absolute{
+	display: absolute;
+	margin-left: -10px;
+	margin-bottom: -15px;
+}
+
+#counter {
+  display: flex;
+  background-color: red;
+  height: 22px; /* Increase height to accommodate font size */
+  width: 22px;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+#counter-value {
+	margin-top: 10px;
+  font-size: 12px;
+  text-align: start;
+	color: white;
+}
+
+#cart-div{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 @media only screen and (max-width: 930px){
 	#flex-art{
-		flex-direction: column-reverse;
-		gap: 80px;
+		margin-top: 50px;
+		flex-direction: column;
+		gap: 40px;
 	}
 
 	#header{
 		min-height: 700px;
 		margin-bottom: 130px;
 	}
+
 }
 
 img {

@@ -1,7 +1,15 @@
 <div id="header">
 	<div id="top-header">
 		<img id="logo" src="/assets/Logo.png"/>
-		<img class="cart" src="assets/cart-check-svgrepo-com.svg"/>
+		<div id="cart-div">
+			<!-- <img class="cart" src="assets/cart-check-svgrepo-com.svg"/> -->
+			<img class="cart" src="assets/cart-shopping-svgrepo-com.svg"/>
+			<div id="count-absolute">
+				<div id="counter" [style.visibility]="sumQuantity(this.products) > 0 ? 'visible' : 'hidden'">
+					<p id="counter-value">{{sumQuantity(products)}}</p>
+				</div>
+			</div>
+		</div>
 	</div>
 	<div id="art">
 		<div id="flex-art">

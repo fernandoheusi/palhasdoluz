@@ -25,15 +25,5 @@ import { DomSanitizer } from '@angular/platform-browser';
 })
 export class AppComponent {
   title = 'palhasdoluz';
-
-  // constructor(
-  //   private matIconRegistry: MatIconRegistry,
-  //   private domSanitizer: DomSanitizer
-  // ) {
-  //   this.matIconRegistry.addSvgIcon(
-  //     'cart',
-  //     this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/cart-shopping-svgrepo-com.svg')
-  //   )
-  // }
   products: ProductInterface[] = getProducts();
 }
