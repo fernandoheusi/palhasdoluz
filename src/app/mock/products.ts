@@ -29,6 +29,12 @@ export const productsMock = [
 		picture: 'assets/Peda-(kahk-el-eid)-eid-and-ramadan-dates-sweets-PNG.png',
 		alt: 'assets/chocolate.png',
 	},
+	{
+		name: 'churros',
+		value: 5,
+		picture: 'assets/Peda-(kahk-el-eid)-eid-and-ramadan-dates-sweets-PNG.png',
+		alt: 'assets/chocolate.png',
+	},
 ]
 
 export interface ProductMock {

@@ -1,13 +1,12 @@
 #header{
 	background: linear-gradient(180deg, #FFC048 31%, #99732B00 100%);
-	min-height: 466px;
+	/* min-height: 466px; */
 	background-color: #FFC048;
 	width: 100%;
 }
 
-#art{
+/* #art{
 	top: 200px;
-	/* position: absolute; */
 	width: 100%;
 }
 
@@ -16,16 +15,21 @@
 	align-items: center;
 	justify-content: center;
 	gap: 160px;
-}
+	padding-top: 130px;
+} */
 
 #logo{
 	height: 106px;
 }
 
 #top-header{
+	position: fixed;
+	top: 0;
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	padding: 20px 20px 0;
+	padding: 10px 0;
+	background-color: #FFC048;
 }
 
 .cart{
@@ -60,16 +64,17 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-right: 12px;
 }
 @media only screen and (max-width: 930px){
 	#flex-art{
-		margin-top: 50px;
+		/* margin-top: 50px; */
 		flex-direction: column;
 		gap: 40px;
 	}
 
 	#header{
-		min-height: 700px;
+		/* min-height: 700px; */
 		margin-bottom: 130px;
 	}
 

@@ -1,15 +1,14 @@
-#productsList{
+#product-container{
 	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-	gap: 30px;
 	justify-content: center;
-	margin: auto;
-	justify-content:space-around;
 }
-
+#productsList{
+	display: grid; 
+	grid-template-columns: repeat(auto-fill, 200px); 
+	justify-content: space-between; 
+	grid-gap: 20px; 
+}
 .filling-empty-space-childs{
-	width:205px;
 	height:0;
 }
 

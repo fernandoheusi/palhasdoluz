@@ -4,6 +4,7 @@ import { AboutUsComponent } from '../about-us/about-us.component';
 import { SeparatorComponent } from '../separator/separator.component';
 import { ProductInterface } from '../../models/Product';
 import { BuyButtonComponent } from '../buy-button/buy-button.component';
+import { SumQuantity } from '../../app.component';
 
 export interface IncreaseCount {
   (): void;
@@ -19,4 +20,5 @@ export interface IncreaseCount {
 export class ContainerComponent {
 
   @Input() products: ProductInterface[] = []
+  @Input() sumQuantity: SumQuantity = ([])=>0;
 }

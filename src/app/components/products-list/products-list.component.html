@@ -1,16 +1,18 @@
 <app-separator title="Aproveite"></app-separator>
-<div id="productsList">
-	@for (product of products;track product.name) {
-	
-		<app-product 
-			[increaseQuantity]="product.increaseQuantity" 
-			[decreaseQuantity]="product.decreaseQuantity" 
-			[productQuantity]="product.quantity" 
-			productName={{product.name}} 
-			productValue={{product.value}} 
-			productPicture={{product.picture}} 
-			productAlt={{product.alt}} 
-		>
-		</app-product>
-	}
+<div id="product-container">
+	<div id="productsList" [style.width.px]="calculateProductsListWidth()">
+		@for (product of products;track product.name) {
+		
+			<app-product 
+				[increaseQuantity]="product.increaseQuantity" 
+				[decreaseQuantity]="product.decreaseQuantity" 
+				[productQuantity]="product.quantity" 
+				productName={{product.name}} 
+				productValue={{product.value}} 
+				productPicture={{product.picture}} 
+				productAlt={{product.alt}} 
+			>
+			</app-product>
+		}
+	</div>
 </div>
