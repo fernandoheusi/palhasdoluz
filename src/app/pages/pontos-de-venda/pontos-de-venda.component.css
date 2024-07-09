@@ -1,0 +1,31 @@
+#container{
+	display: flex;
+	justify-content: center;
+}
+app-separator{
+	margin-top: 200px;
+}
+google-map {
+	width: 1000px;
+}
+
+.map-container {
+	height: 600px;
+	width: 100%;
+	max-width: 1000px;
+}
+
+.map-frame {
+  border: 2px solid black;
+  height: 100%;
+}
+
+#map {
+  height: 100%;
+}
+
+
+
+#my-div-icon{
+	background-color: red;
+}

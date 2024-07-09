@@ -1,25 +1,15 @@
 #header{
 	background: linear-gradient(180deg, #FFC048 31%, #99732B00 100%);
-	/* min-height: 466px; */
 	background-color: #FFC048;
 	width: 100%;
 }
 
-/* #art{
-	top: 200px;
-	width: 100%;
-}
-
-#flex-art{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 160px;
-	padding-top: 130px;
-} */
-
 #logo{
 	height: 106px;
+}
+
+#logo:hover{
+	cursor: pointer;
 }
 
 #top-header{
@@ -46,7 +36,7 @@
 #counter {
   display: flex;
   background-color: red;
-  height: 22px; /* Increase height to accommodate font size */
+  height: 22px;
   width: 22px;
   border-radius: 30px;
   justify-content: center;
@@ -66,15 +56,23 @@
 	justify-content: center;
 	margin-right: 12px;
 }
+
+#pontos-de-venda-button{
+	margin: 0;
+	color: #582919;
+	font-family: "Work Sans", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 18px;
+	margin-right: 20px;
+}
 @media only screen and (max-width: 930px){
 	#flex-art{
-		/* margin-top: 50px; */
 		flex-direction: column;
 		gap: 40px;
 	}
 
 	#header{
-		/* min-height: 700px; */
 		margin-bottom: 130px;
 	}
 

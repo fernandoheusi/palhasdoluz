@@ -1,14 +1,6 @@
-import { Product } from "../models/Product"
-import { productsMock, ProductMock } from "../mock/products"
 import { Injectable } from '@angular/core';
 import { ProductInterface } from '../models/Product';
-
-export function getProducts(){
-	const products = productsMock.map((product: ProductMock) => {
-		return new Product(product.name, product.value, product.picture, product.alt)
-	})
-	return products
-}
+import { getProducts } from './products';
 
 @Injectable({
   providedIn: 'root',

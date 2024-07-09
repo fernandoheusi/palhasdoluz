@@ -1,7 +1,8 @@
 <div id="header">
 	<div id="top-header">
-		<img id="logo" src="/assets/Logo.png"/>
+		<img id="logo" src="/assets/Logo.png" (click)="handleClick('')"/>
 		<div id="cart-div">
+			<button id="pontos-de-venda-button" (click)="handleClick('/pontos')">Pontos de Venda</button>
 			<img class="cart" src="assets/cart-shopping-svgrepo-com.svg"/>
 			<div id="count-absolute">
 				<div id="counter" [style.visibility]="sumQuantity(this.products) > 0 ? 'visible' : 'hidden'">
@@ -10,10 +11,4 @@
 			</div>
 		</div>
 	</div>
-	<!-- <div id="art">
-		<div id="flex-art">
-			<img src="/assets/Captura_de_Tela_2024-05-23_às_16.56.25-removebg-preview.png"/>
-			<ng-content></ng-content>
-		</div>
-	</div> -->
 </div>

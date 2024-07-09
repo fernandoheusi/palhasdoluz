@@ -1,4 +1,5 @@
 <div id="container">
+	<app-pontos-de-venda ></app-pontos-de-venda>
 	<app-products-list [products]="products"></app-products-list>
 	<app-about-us></app-about-us>
 	<app-buy-button [style.visibility]="sumQuantity(this.products) > 0 ? 'visible' : 'hidden'" [sumQuantity]="sumQuantity" [products]="products"></app-buy-button>

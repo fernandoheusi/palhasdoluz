@@ -3,11 +3,11 @@ import { RouterOutlet } from '@angular/router';
 import { ContainerComponent } from './components/container/container.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ProductsListComponent } from './components/products-list/products-list.component';
-import { getProducts } from './services/products';
+import { ProductsService, getProducts } from './services/products';
 import { ProductInterface } from './models/Product';
 import { HttpClientModule } from '@angular/common/http';
-import { MatIcon, MatIconRegistry } from '@angular/material/icon';
-import { DomSanitizer } from '@angular/platform-browser'; 
+import { SellingPointsService } from './services/sellingPoints';
+// import { mapsKey } from '../assets/environment/environment.env.js';
 
 export type SumQuantity = (products:ProductInterface[])=>number;
 
@@ -20,7 +20,6 @@ export type SumQuantity = (products:ProductInterface[])=>number;
     HeaderComponent, 
     ProductsListComponent, 
     HttpClientModule, 
-    MatIcon
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
@@ -29,10 +28,19 @@ export type SumQuantity = (products:ProductInterface[])=>number;
 
 export class AppComponent {
   title = 'palhasdoluz';
-  products: ProductInterface[] = getProducts();
-  sumQuantity(products: ProductInterface[]){
-    let sum = 0;
-    products.forEach(product=>sum += product.quantity)
-    return sum;
-  };
+
+  constructor(private productsService: ProductsService, private sellingPointsService: SellingPointsService) {
+  }
+
+  get products() {
+    return this.productsService.getProducts();
+  }
+
+  get sellingPoints() {
+    return this.sellingPointsService.getSellingPoints();
+  }
+
+  sumQuantity() {
+    return this.productsService.sumQuantity;
+  }
 }
