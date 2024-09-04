@@ -2,13 +2,13 @@
 	<div id="top-header">
 		<img id="logo" src="/assets/Logo.png" (click)="handleClick('')"/>
 		<div id="cart-div">
-			<button id="pontos-de-venda-button" (click)="handleClick('/pontos')">Pontos de Venda</button>
-			<img class="cart" src="assets/cart-shopping-svgrepo-com.svg"/>
-			<div id="count-absolute">
-				<div id="counter" [style.visibility]="sumQuantity(this.products) > 0 ? 'visible' : 'hidden'">
-					<p id="counter-value">{{sumQuantity(products)}}</p>
-				</div>
-			</div>
+			<a href="https://www.instagram.com/palhasdoluz/" target="_blank">
+				<img src="/assets/instagram.png" id="instagram-icon"/>
+			</a>
+		</div>
+	</div>
+	<div id="bottom-header">
+		<div id="button-div">
 		</div>
 	</div>
 </div>

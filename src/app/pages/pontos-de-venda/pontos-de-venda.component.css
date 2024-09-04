@@ -13,19 +13,16 @@ google-map {
 	height: 600px;
 	width: 100%;
 	max-width: 1000px;
+	z-index: 0;
 }
 
 .map-frame {
   border: 2px solid black;
   height: 100%;
+	z-index: 0;
 }
 
 #map {
   height: 100%;
-}
-
-
-
-#my-div-icon{
-	background-color: red;
+	z-index: 0;
 }

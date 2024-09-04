@@ -56,6 +56,16 @@ button{
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-.my-div-icon{
-	background-color: red;
+.icon-div{
+	display: flex;
+}
+
+
+.my-div-span{
+	color: #582919;
+	font-family: "Work Sans", sans-serif;
+	font-weight: 700;
+	/* font-style: normal; */
+	font-size: 8px;
+	
 }
