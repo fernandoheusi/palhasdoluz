@@ -21,10 +21,6 @@ export class PontosDeVendaComponent implements AfterViewInit {
   private centroid:L.LatLngExpression= [-20.4810998, -54.635534 ];
   @Inject(DOCUMENT) private document: Document
 
-  private onClick():void{
-    console.log('oi')
-  }
-
   icon = {
   icon: new L.DivIcon({
     className: 'my-div-icon',
@@ -70,15 +66,9 @@ export class PontosDeVendaComponent implements AfterViewInit {
     );}
   }
   
-  function getOnClick(sellingPoint: SellingPointsInterface):()=>void{
-    return goToUrl(sellingPoint)
-  }
-  
   sellingPoints.forEach(sellingPoint => {
-    // L.marker([sellingPoint.coordenates.latitude ?? 0,sellingPoint.coordenates.longitude ?? 0], getIcon(sellingPoint)).addTo(this.map).on('click', this.onClick);
     const correctedLatitude = (sellingPoint.coordenates.latitude ?? 0) - 0
     const correctedLongitude = (sellingPoint.coordenates.longitude ?? 0) + 0.00
-    // L.marker([correctedLatitude,correctedLongitude], getIcon(sellingPoint)).addTo(this.map).on('click', getOnClick(sellingPoint)).bindPopup('A pretty CSS popup.<br> Easily customizable.')
     L.marker([correctedLatitude,correctedLongitude], getIcon(sellingPoint)).addTo(this.map).bindPopup(`<a href=${sellingPoint.googleMapsUrl} target=_blank>${sellingPoint.name}</a>`)
   })
   
