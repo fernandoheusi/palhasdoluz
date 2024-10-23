@@ -1,6 +1,14 @@
+#about-us-content{
+	display: flex;
+	width: 1000px;
+	max-width: 100%;
+	align-items: center;
+}
+
 #about-us-container{
 	display: flex;
-	align-items: center;
+	width: 100%;
+	justify-content: center;
 }
 
 img{
